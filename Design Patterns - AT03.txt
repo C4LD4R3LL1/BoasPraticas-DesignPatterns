@@ -1,0 +1,93 @@
+﻿Atividade:
+
+
+Poste aqui o código de um projeto a escolher que apresenta conteúdos sobre Design Patterns.
+
+
+- Strategy
+- Factory
+- Singleton
+
+
+Resposta:
+
+
+Design Patterns (Padrões de Projeto) são formas organizadas e testadas de resolver problemas comuns no desenvolvimento de software. Eles ajudam a estruturar melhor o código, facilitando manutenção, reutilização e entendimento. Não são códigos prontos, mas sim ideias de organização que podem ser aplicadas em diferentes linguagens e projetos.
+
+
+Strategy (Estratégia):
+
+
+O padrão Strategy é utilizado quando você precisa trocar comportamentos de um objeto em tempo de execução, sem alterar sua estrutura principal. Ele separa diferentes formas de executar uma ação em classes distintas.
+
+
+Em vez de usar muitos if/else, você delega a responsabilidade para diferentes estratégias, tornando o sistema mais flexível.
+
+
+Pontos importantes:
+* Define uma interface comum para os comportamentos
+* Cada comportamento é uma classe separada
+* Permite trocar a lógica em tempo de execução
+* Reduz o uso de condicionais (if/else)
+Vantagens:
+* Código mais organizado e limpo
+* Fácil de adicionar novos comportamentos
+* Segue o princípio de aberto/fechado (não precisa alterar código existente)
+Desvantagens:
+* Aumenta o número de classes
+* Pode deixar o sistema mais complexo para iniciantes
+* Necessita de mais organização inicial
+
+
+Factory (Fábrica):
+
+
+O padrão Factory é responsável por centralizar a criação de objetos, escondendo a lógica de instância. Em vez de criar objetos diretamente com New, você utiliza uma fábrica que decide qual objeto deve ser criado.
+
+
+Isso é muito útil quando o sistema precisa decidir dinamicamente qual classe usar.
+
+
+Pontos importantes:
+* Encapsula a criação de objetos
+* Evita uso direto de new no código principal
+* Permite escolher objetos em tempo de execução
+* Diminui o acoplamento entre classes
+Vantagens:
+* Código mais flexível
+* Facilita manutenção e mudanças futuras
+* Organização centralizada da criação de objetos
+Desvantagens:
+* Pode adicionar complexidade desnecessária em sistemas simples
+* Cria mais classes ou métodos auxiliares
+* Pode dificultar o entendimento inicial
+
+
+Singleton:
+
+
+O padrão Singleton garante que uma classe tenha apenas uma única instância, além de fornecer um ponto global de acesso a ela.
+
+
+É muito usado para recursos que precisam ser compartilhados em todo o sistema.
+
+
+Pontos importantes:
+* Apenas uma instância da classe existe
+* A própria classe controla sua criação
+* Possui um método global de acesso (ex: getInstance())
+* Muito usado para gerenciamento global
+Vantagens:
+* Evita múltiplas instâncias desnecessárias
+* Facilita o acesso global a recursos
+* Útil para controle centralizado (configurações, áudio, etc.)
+Desvantagens:
+* Pode gerar acoplamento global
+* Dificulta testes (principalmente testes unitários)
+* Pode ser mal utilizado e causar problemas de design
+
+
+Os Design Patterns são essenciais para criar sistemas mais bem estruturados. Cada um resolve um tipo específico de problema:
+* Strategy - foco em comportamento dinâmico.
+* Factory - foco na criação de objetos.
+* Singleton - foco no controle de instância única.
